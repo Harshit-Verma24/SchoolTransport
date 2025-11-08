@@ -1,0 +1,40 @@
+{
+  "name": "school-transport-website",
+  "version": "1.0.0",
+  "description": "School Link Transport - Safe School Transportation Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -c-1",
+    "dev": "npx http-server . -p 3000 -c-1 -o",
+    "build": "echo 'No build process needed for static HTML site'",
+    "serve": "python -m http.server 3000",
+    "serve-node": "node server.js"
+  },
+  "keywords": [
+    "school-transport",
+    "education",
+    "transportation",
+    "school-bus",
+    "student-safety",
+    "html",
+    "css",
+    "javascript",
+    "responsive-design"
+  ],
+  "author": "School Link Transport",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/school-transport-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/school-transport-website/issues"
+  },
+  "homepage": "https://github.com/your-username/school-transport-website#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

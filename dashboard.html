@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - School Link Transport</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 6v6"></path>
+                            <path d="M15 6v6"></path>
+                            <path d="M2 12h19.6"></path>
+                            <path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path>
+                            <circle cx="7" cy="18" r="2"></circle>
+                            <path d="M9 18h5"></path>
+                            <circle cx="16" cy="18" r="2"></circle>
+                        </svg>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <span class="logo-text">School Link Transport</span>
+                </a>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="login.html" class="nav-link">Login</a>
+                    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 12h16"></path>
+                        <path d="M4 18h16"></path>
+                        <path d="M4 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="login.html" class="mobile-nav-link">Login</a>
+            <a href="dashboard.html" class="mobile-nav-link">Dashboard</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Welcome Header -->
+            <div class="dashboard-header">
+                <div class="welcome-section">
+                    <h1>Welcome to Your Dashboard</h1>
+                    <p>Manage your child's school transportation with ease</p>
+                </div>
+                <div class="user-info">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Parent Portal</span>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <div>
+                            <p class="stat-label">Active Routes</p>
+                            <p class="stat-value">25</p>
+                        </div>
+                        <div class="stat-icon blue">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <div>
+                            <p class="stat-label">Happy Students</p>
+                            <p class="stat-value">5000+</p>
+                        </div>
+                        <div class="stat-icon green">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <div>
+                            <p class="stat-label">On-time Performance</p>
+                            <p class="stat-value">98%</p>
+                        </div>
+                        <div class="stat-icon orange">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-content">
+                        <div>
+                            <p class="stat-label">Safety Rating</p>
+                            <p class="stat-value">4.9/5</p>
+                        </div>
+                        <div class="stat-icon purple">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Overview -->
+            <section class="service-overview">
+                <div class="card gradient-card">
+                    <div class="card-content">
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h2>Premium Bus Service</h2>
+                                <p>Our comprehensive school transport service ensures safe, comfortable, and timely travel for your child. With modern amenities and experienced staff, we provide the best transportation solution for your family.</p>
+                                <div class="service-features">
+                                    <div class="service-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                        </svg>
+                                        <span>GPS Tracking</span>
+                                    </div>
+                                    <div class="service-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                        </svg>
+                                        <span>AC Buses</span>
+                                    </div>
+                                    <div class="service-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                        </svg>
+                                        <span>Experienced Drivers</span>
+                                    </div>
+                                    <div class="service-feature">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                        </svg>
+                                        <span>24/7 Support</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-image">
+                                <div class="bus-icon">
+                                    <svg width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M8 6v6"></path>
+                                        <path d="M15 6v6"></path>
+                                        <path d="M2 12h19.6"></path>
+                                        <path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path>
+                                        <circle cx="7" cy="18" r="2"></circle>
+                                        <path d="M9 18h5"></path>
+                                        <circle cx="16" cy="18" r="2"></circle>
+                                    </svg>
+                                    <div class="bus-badge">50+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Grid -->
+            <section class="features-section">
+                <div class="section-header">
+                    <h2>Our Premium Features</h2>
+                    <p>Experience the best in school transportation</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M8 6v6"></path>
+                                    <path d="M15 6v6"></path>
+                                    <path d="M2 12h19.6"></path>
+                                    <path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path>
+                                    <circle cx="7" cy="18" r="2"></circle>
+                                    <path d="M9 18h5"></path>
+                                    <circle cx="16" cy="18" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Modern Fleet</h3>
+                                <p>Air-conditioned, well-maintained buses with CCTV</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Safety First</h3>
+                                <p>GPS tracking, verified drivers, first-aid equipped</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Punctual Service</h3>
+                                <p>On-time pick and drop with real-time updates</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Professional Staff</h3>
+                                <p>Trained drivers and lady attendants</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Live Tracking</h3>
+                                <p>Real-time bus tracking via mobile app</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Flexible Schedule</h3>
+                                <p>Customizable pickup and drop times</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Area Selection and Pricing -->
+            <section class="booking-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            Choose Your Service Area & Plan
+                        </h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="booking-grid">
+                            <!-- Area Selection -->
+                            <div class="booking-section">
+                                <div class="section-title">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <h3>Select Your Area</h3>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select id="areaSelect" class="select">
+                                        <option value="">Choose your area/locality</option>
+                                        <option value="1" data-price="2500" data-distance="5 km">Connaught Place - ₹2500/month • 5 km</option>
+                                        <option value="2" data-price="2000" data-distance="8 km">Karol Bagh - ₹2000/month • 8 km</option>
+                                        <option value="3" data-price="2200" data-distance="12 km">Rajouri Garden - ₹2200/month • 12 km</option>
+                                        <option value="4" data-price="1800" data-distance="15 km">Dwarka - ₹1800/month • 15 km</option>
+                                        <option value="5" data-price="1900" data-distance="10 km">Janakpuri - ₹1900/month • 10 km</option>
+                                        <option value="6" data-price="2400" data-distance="18 km">Vasant Kunj - ₹2400/month • 18 km</option>
+                                        <option value="7" data-price="2800" data-distance="20 km">South Delhi - ₹2800/month • 20 km</option>
+                                        <option value="8" data-price="1600" data-distance="25 km">East Delhi - ₹1600/month • 25 km</option>
+                                        <option value="9" data-price="1700" data-distance="22 km">North Delhi - ₹1700/month • 22 km</option>
+                                        <option value="10" data-price="1500" data-distance="16 km">West Delhi - ₹1500/month • 16 km</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="selected-info" id="selectedAreaInfo" style="display: none;">
+                                    <div class="info-content">
+                                        <div>
+                                            <p class="info-label">Selected Area:</p>
+                                            <p class="info-value" id="areaName">-</p>
+                                            <p class="info-detail" id="areaDistance">-</p>
+                                        </div>
+                                        <div class="info-price">
+                                            <p class="info-label">Base Price:</p>
+                                            <p class="info-value" id="areaPrice">-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Plan Selection -->
+                            <div class="booking-section">
+                                <div class="section-title">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    <h3>Select Your Plan</h3>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select id="planSelect" class="select">
+                                        <option value="">Choose your service plan</option>
+                                        <option value="1" data-multiplier="1">One Way - Either pick or drop</option>
+                                        <option value="2" data-multiplier="1.8">Two Way - Both pick and drop</option>
+                                        <option value="3" data-multiplier="1.5">Flexible - Custom schedule</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="selected-info" id="selectedPlanInfo" style="display: none;">
+                                    <div class="info-content">
+                                        <div>
+                                            <p class="info-label">Selected Plan:</p>
+                                            <p class="info-value" id="planName">-</p>
+                                            <p class="info-detail" id="planDescription">-</p>
+                                        </div>
+                                        <div class="plan-badge" id="planBadge">-</div>
+                                    </div>
+                                    <div class="plan-features" id="planFeatures"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Display -->
+                        <div class="pricing-display" id="pricingDisplay" style="display: none;">
+                            <div class="pricing-content">
+                                <h3>Your Monthly Fee</h3>
+                                <div class="price-display">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg>
+                                    <span class="price-amount" id="priceAmount">0</span>
+                                    <span class="price-period">/month</span>
+                                </div>
+                                <div class="price-details">
+                                    <p><span id="priceAreaName">-</span> • <span id="pricePlanName">-</span> Plan</p>
+                                </div>
+                                <button class="btn btn-primary btn-large" id="bookNowBtn">
+                                    <span class="btn-text">Book Now</span>
+                                    <div class="btn-spinner hidden">
+                                        <div class="spinner"></div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="empty-state" id="emptyState">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8 6v6"></path>
+                                <path d="M15 6v6"></path>
+                                <path d="M2 12h19.6"></path>
+                                <path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path>
+                                <circle cx="7" cy="18" r="2"></circle>
+                                <path d="M9 18h5"></path>
+                                <circle cx="16" cy="18" r="2"></circle>
+                            </svg>
+                            <p>Select your area and plan to see pricing</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service Information -->
+            <section class="service-info">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                            Service Performance
+                        </h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="performance-grid">
+                            <div class="performance-card">
+                                <div class="performance-icon orange">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <h4>5000+ Students</h4>
+                                <p>Trusted by thousands of parents</p>
+                                <div class="growth-indicator">↑ 12% this year</div>
+                            </div>
+                            
+                            <div class="performance-card">
+                                <div class="performance-icon blue">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M8 6v6"></path>
+                                        <path d="M15 6v6"></path>
+                                        <path d="M2 12h19.6"></path>
+                                        <path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path>
+                                        <circle cx="7" cy="18" r="2"></circle>
+                                        <path d="M9 18h5"></path>
+                                        <circle cx="16" cy="18" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <h4>50+ Buses</h4>
+                                <p>Modern fleet with all amenities</p>
+                                <div class="growth-indicator">↑ 8 new buses</div>
+                            </div>
+                            
+                            <div class="performance-card">
+                                <div class="performance-icon green">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                </div>
+                                <h4>4.8/5 Rating</h4>
+                                <p>Excellent parent satisfaction</p>
+                                <div class="growth-indicator">98% positive</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 6v6"></path>
+                            <path d="M15 6v6"></path>
+                            <path d="M2 12h19.6"></path>
+                            <path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path>
+                            <circle cx="7" cy="18" r="2"></circle>
+                            <path d="M9 18h5"></path>
+                            <circle cx="16" cy="18" r="2"></circle>
+                        </svg>
+                        <span>School Link Transport</span>
+                    </div>
+                    <p>Providing safe and reliable school transportation services for your children. Your trusted partner in daily school commutes.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                            </svg>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg>
+                            <span>Mandeep6767@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <p>123 School Road, Education District</p>
+                                <p>New Delhi, India - 110001</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                            </svg>
+                            <span>+91 98765 43210</span>
+                        </div>
+                        <div class="contact-detail">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg>
+                            <span>Mandeep6767@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 School Link Transport. All rights reserved.</p>
+                <button class="back-to-top" id="backToTop">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m5 12 7-7 7 7"></path>
+                        <path d="M12 19V5"></path>
+                    </svg>
+                    Back to Top
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
